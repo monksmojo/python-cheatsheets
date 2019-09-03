@@ -131,3 +131,40 @@ def double_function(num):
 
 print(double_function.__doc__, "of 10")
 double_function(10)
+
+# Python Variables
+
+# A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data which can be changed later throughout programming. For example,
+
+number = 10
+print(number)
+# here we created a variable name number to which we can assign the value.
+
+# a variable value can be changed
+number = 0.1
+print(number)
+
+# Initially, the value of number was 10. Later it's changed to 1.1.
+# we can assign value to the operator using assigment operator
+
+# Note: In Python, we don't assign values to the variables, whereas Python gives the reference of the object (value) to the variable.
+
+# changing the value of the variable using assigment operator
+website = "apple.com"
+print(website)
+website = "google.com"
+print(website)
+
+# Note : Python is a type inferred language; it can automatically know apple.com is a string and declare website as a string.
+
+# either python is loosely typed either the type of the variable or the value that variable holds is known when the statement is interprated
+
+# example to assign multiple value to the multiple variables
+
+a, b, c = 10, 0.6, "snake & ladders"
+print("a= ", a, "b= ", b, "c= ", c)
+
+# we can also assign same value to multiple variable
+
+a, b, c = 10
+print("a= ", a, "b= ", b, "c= ", c)
