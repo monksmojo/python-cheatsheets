@@ -166,5 +166,50 @@ print("a= ", a, "b= ", b, "c= ", c)
 
 # we can also assign same value to multiple variable
 
-a, b, c = 10
-print("a= ", a, "b= ", b, "c= ", c)
+a = b = c = 10
+print("a= ", a, "b= ", b, "c= ", c, "are all same")
+
+# Constants
+# A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+
+# in python the CONSTANTS are declared in seprate module and the we import module to the main file
+
+# for ex-:
+# create a file constant.py
+# declare consyants in it
+# like
+PI = 3.14
+GRAVITY = 9.8
+# import constant.py file in main file
+# print the constants
+print("printing the constants")
+print(PI)
+print(GRAVITY)
+
+# Literals
+# Literal is a raw data given in a variable or constant. In Python, there are various types of literals they are as follows:
+
+# Numeric Literal
+# Numeric Literals are immutable (unchangeable). Numeric literals can belong to 3 different numerical types Integer, Float and Complex.
+
+a = 0b1010  # binary literal
+b = 100  # decimalliteral
+c = 0o310  # octal literal
+d = 0x12c  # hexadecimal literal
+
+print("a value hold binary literal conveted to decimal", a)
+print("b value hold decimal literal", b)
+print("c value hold octal literal conveted to decimal", c)
+print("d value hold hexadecimal literal conveted to decimal", d)
+
+# float literal
+float_1 = 10.5
+float_2 = 1.5e2
+print("value of float_1 literal", float_1)
+print("value of float_2 literal", float_2)
+
+# complex literal
+x = 3.14j
+print("complex literal value", x)
+print("real_part =", x.real)
+print("imaginary part=", x.imag)
