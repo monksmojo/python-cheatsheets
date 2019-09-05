@@ -204,7 +204,7 @@ print("d value hold hexadecimal literal conveted to decimal", d)
 
 # float literal
 float_1 = 10.5
-float_2 = 1.5e2
+float_2 = 1.5e2  # 1.5*10^2
 print("value of float_1 literal", float_1)
 print("value of float_2 literal", float_2)
 
@@ -213,3 +213,12 @@ x = 3.14j
 print("complex literal value", x)
 print("real_part =", x.real)
 print("imaginary part=", x.imag)
+
+# String literals
+
+# A string literal is a sequence of characters surrounded by quotes. We can use both single, double or triple quotes for a string. And, a character literal is a single character surrounded by single or double quotes.
+
+string_literal = "this is python string"
+charcter_literal='c'
+print("the string literal is",string_literal)
+print("the character literal is",character_literal)
