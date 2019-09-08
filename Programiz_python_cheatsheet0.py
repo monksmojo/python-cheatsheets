@@ -219,6 +219,82 @@ print("imaginary part=", x.imag)
 # A string literal is a sequence of characters surrounded by quotes. We can use both single, double or triple quotes for a string. And, a character literal is a single character surrounded by single or double quotes.
 
 string_literal = "this is python string"
-charcter_literal='c'
-print("the string literal is",string_literal)
-print("the character literal is",character_literal)
+character_literal = 'c'
+print("the string literal is", string_literal)
+print("the character literal is", character_literal)
+multiline_string = '''hello today i am gonna show you->
+the multiline string->
+present in python'''
+print("multiline strig in python")
+print(multiline_string)
+
+# Boolean literals
+
+# A Boolean literal can have any of the two values: True or False.
+
+x = (1 == True)  # since value of true=1 it will return 1
+y = (1 == False)  # since value of false=0 it will return 0 as 1!=0
+a = True+1  # 2
+b = False+5  # 5
+print("boolean literal")
+print("x is ", x)
+print("y is", y)
+print("a is", a)
+print("b is", b)
+
+# special literal(None Literal)
+# python contains one special literal i.e None. We use to give null value to it
+# for ex
+drink = "available"
+food = None
+
+
+def menu(item):
+    if item == drink:
+        print(drink)
+    else:
+        print(food)
+
+
+print("use of none literal")
+menu(drink)
+menu(food)
+
+# Literral Collectuons
+# there are four different literals collection like list,set,tuple,dictionary..
+
+# Data Types in python
+# Every value in python has a datatype Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+
+# There are various data types in Python. Some of the important types are listed below.
+
+# 0. pytyhon number
+# Integers, floating point numbers and complex numbers falls under Python numbers category. They are defined as int, float and complex class in Python.
+
+# We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
+
+a=5#integer
+print(a,"is of type",type(a))
+
+a=2.0#float
+print(a,"is a type of",type(a))
+
+a=1+2j#complex
+print(a,"is it complex number ? \n ans:",isinstance(a,complex))
+
+# 1. python list 
+fruit=["apple","banana","orange"]
+print("list literal- ",fruit)
+
+# 2. python tuple 
+number=(10,20,30,30)
+print("tuple literal-",number)   
+
+# 3. python dictionary 
+alphabets={"a":"apple","b":"ball","c":"cat"}
+print("dictionary literal",alphabets)
+
+# 4. python set 
+vowels={"a","e","i","o","u"}
+print("set literal-",vowels)
+
