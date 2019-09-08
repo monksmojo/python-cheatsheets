@@ -228,6 +228,15 @@ present in python'''
 print("multiline strig in python")
 print(multiline_string)
 
+# We can use the slicing operator [ ] to extract an item or a range of items from a string. Index starts form 0 in Python
+print("string length-", len(string_literal))
+print("string_literal[0:4]-", string_literal[0:4])
+print("string_literal[7:]", string_literal[7:])
+print("string_literal[:len(string_literal)]",
+      string_literal[:len(string_literal)])
+# strings are immutable in nature so below command will cause an error
+#string_literal[22] = 's'
+
 # Boolean literals
 
 # A Boolean literal can have any of the two values: True or False.
@@ -273,28 +282,71 @@ menu(food)
 
 # We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
 
-a=5#integer
-print(a,"is of type",type(a))
+a = 5  # integer
+print(a, "is of type", type(a))
 
-a=2.0#float
-print(a,"is a type of",type(a))
+a = 2.0  # float
+print(a, "is a type of", type(a))
+# A floating point number is accurate up to 15 decimal places. Integer and floating points are separated by decimal points. 1 is integer, 1.0 is floating point number.
 
-a=1+2j#complex
-print(a,"is it complex number ? \n ans:",isinstance(a,complex))
+a = 1+2j  # complex
+print(a, "is it complex number ? \n ans:", isinstance(a, complex))
 
-# 1. python list 
-fruit=["apple","banana","orange"]
-print("list literal- ",fruit)
+# 1. python list
+# list is an orered sequence of item(WE CAN PERFORM SLICING OPERATION ON LIST BECAUSE THEY ARE ORDERED). it is one of the most used data type in the python and is very flexible.
+fruit = ["apple", "orange", "banana"]
 
-# 2. python tuple 
-number=(10,20,30,30)
-print("tuple literal-",number)   
+# all the items in the list do not to be of same type
+list1 = [1, 2.8, "python-list"]
+print("python list1-", list1)
 
-# 3. python dictionary 
-alphabets={"a":"apple","b":"ball","c":"cat"}
-print("dictionary literal",alphabets)
+print("list literal- ", fruit)
+# We can use the slicing operator [ ] to extract an item or a range of items from a list. Index starts form 0 in Python
+print("slicing exapmle on fruit & list1")
+print("list1[0]-", list1[0])  # 1 index start from 0
+print("list1[0:3]-", fruit[0:3])  # apple orange banana
+print("list1[1:2]-", fruit[1:2])  # start from index 1 to (2-1)
+print("list1[1:]-", fruit[1:])  # orange banana
+print("list1[:3]", fruit[:3])  # apple orrange banana
 
-# 4. python set 
-vowels={"a","e","i","o","u"}
-print("set literal-",vowels)
+# python list are mutable
+fruit[2] = "mangos"
+print("printing fruit list to show mutability \n", fruit)
 
+# 2. python tuple
+# Tuple is an ordered sequence of items same as list.The only difference is that tuples are immutable. Tuples once created cannot be modified.
+
+# Tuples are used to write-protect data and are usually faster than list as it cannot change dynamically.
+
+# It is defined within parentheses () where items are separated by commas.
+number = (10, 20, 30, 30)
+print("tuple literal-", number)
+
+# all the elements of the tuple can be of diffrent types
+tuple1 = (1.0, 6, "HelloTupple")
+# We can use the slicing operator [] to extract items but we cannot change its value.
+print("tuple1[2]-", tuple1[2])
+print("tuple1[0:3]-", tuple1[0:3])
+
+# 3. python dictionary
+# Dictionary is an unordered collection of key-value pairs.
+
+# It is generally used when we have a huge amount of data. Dictionaries are optimized for retrieving data. We must know the key to retrieve the value.
+
+# In Python, dictionaries are defined within braces {} with each item being a pair in the form key:value. Key and value can be of any type.
+
+alphabets = {"a": "apple", "b": "ball", "c": "cat"}
+print("dictionary literal", alphabets)
+print("type of alphabets-", type(alphabets))
+print("alphabets['a']-", alphabets["a"])
+print("alphabets['b']-", alphabets["b"])
+# 4. python set
+# Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered.
+
+# We can perform set operations like union, intersection on two sets. Set have unique values. They eliminate duplicates.
+vowels = {"a", "e", "i", "o", "u"}
+set1 = {5, 2, 3, 3, 4, 6}
+print("set literal-", vowels)
+print("set1-", set1)
+# Since, set are unordered collection, indexing has no meaning. Hence the slicing operator [] does not work. so below statement will give error
+# print(set1,set[1])
