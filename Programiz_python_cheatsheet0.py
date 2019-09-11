@@ -350,3 +350,21 @@ print("set literal-", vowels)
 print("set1-", set1)
 # Since, set are unordered collection, indexing has no meaning. Hence the slicing operator [] does not work. so below statement will give error
 # print(set1,set[1])
+
+# we can also convert one one data type to another
+print("converting", 5, "int to float", float(5))
+print("converting", 5.0, "float to int", int(5.0))
+print("converting", 100, "int to string", str(5.0))
+# you can't convert string to int the following code will give error
+# >>> int('12po')
+
+# converting string to a list
+print("converting string-"+'"cool mamba"'+"to list", list("cool mamba"))
+# converting list to tuple
+print("converting list", [10, 11.56, "hello"],
+      "to tuple", tuple([10, 11.56, "hello"]))
+
+# we can alos convert list to set, tuple to set & # and vice versa
+
+# list to dict
+print("converting list", [[1, 2], [3, 4]], "to dict", dict([[1, 2], [3, 4]]))
