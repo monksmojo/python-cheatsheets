@@ -368,3 +368,53 @@ print("converting list", [10, 11.56, "hello"],
 
 # list to dict
 print("converting list", [[1, 2], [3, 4]], "to dict", dict([[1, 2], [3, 4]]))
+
+
+# type conversion
+# the process of converting the value of one data type of one value to another data type is called type conversion.
+# python has two type of type conversion
+# 1. implicit type conversion
+# 2. explicit type conversion
+
+# Implicit Type Conversion:
+# In Implicit type conversion, Python automatically converts one data type to another data type. This process doesn't need any user involvement.
+
+# Let's see an example where Python promotes conversion of lower datatype (integer) to higher data type (float) to avoid data loss.
+
+num_int = 30
+num_float = 10.87
+print("inplicit type conversion")
+print(num_int, type(num_int))
+print(num_float, type(num_float))
+print(num_int+num_float, type(num_int+num_float))
+
+num_int = 30
+num_string = "456"
+print(type(num_int))
+print(type(num_string))
+print("adding THESE two will give error TypeError: unsupported operand type(s) for +: 'int' and 'str' ")
+print("However Python has the solution for this type of situation which is know as Explicit Conversion.")
+
+# In the above program,
+
+# We add two variable num_int and num_str.
+# As we can see from the output, we got typeerror. Python is not able use Implicit Conversion in such condition.
+# However Python has the solution for this type of situation which is know as Explicit Conversion.
+print("adding them using explicit type casting will solve the problem")
+# Explicit Type Conversion:
+# In Explicit Type Conversion, users convert the data type of an object to required data type. We use the predefined functions like int(), float(), str(), etc to perform explicit type conversion.
+
+# This type conversion is also called typecasting because the user casts (change) the data type of the objects.
+
+# Syntax :
+
+
+# Typecasting can be done by assigning the required data type function to the expression.
+# declared above
+# num_int=123
+# num_str="456"
+# adding them with the help of explicity type conversion
+num_string = int(num_string)
+print("num_string coverted to int using explicit type casting")
+print(num_string+num_int)
+print(type(num_int+num_string))
