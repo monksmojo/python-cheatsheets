@@ -418,3 +418,111 @@ num_string = int(num_string)
 print("num_string coverted to int using explicit type casting")
 print(num_string+num_int)
 print(type(num_int+num_string))
+
+# Python Input, Output and Import
+# Python provides numerous built-in functions that are readily available to us at the Python prompt.
+
+# Some of the functions like input() and print() are widely used for standard input and output operations respectively. Let us see the output section first.
+
+# We use the print() function to output data to the standard output device (screen).
+
+# We can also output data to a file, but this will be discussed later. An example use is given below.
+
+print("the sentence will be ouputed to the screeen")
+# Output: this sentence will be outputed to the screen
+a=5
+print("the value of a is",a)#5
+
+# The actual syntax of the print() function is
+
+# print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+# Here, objects is the value(s) to be printed.
+
+# The sep separator is used between the values. It defaults into a space character.
+
+# After all values are printed, end is printed. It defaults into a new line.
+
+# The file is the object where the values are printed and its default value is sys.stdout (screen). Here are an example to illustrate this.
+
+print(1,2,3,4)
+# output: 1 2 3 4
+
+print(1,2,3,4,sep="*")
+# output: 1*2*3*4
+
+print(1,2,3,4,sep="$",end="&")
+#ouput: 1$2$3$4$5&
+
+# Output formatting
+# Sometimes we would like to format our output to make it look attractive. This can be done by using the str.format() method. This method is visible to any string object.
+# Here the curly braces {} are used as placeholders. We can specify the order in which it is printed by using numbers (tuple index).
+
+x=5; y=10
+print("the value of x is {0} and y is {1}".format(x,y))
+
+print("i love {0} and {1}".format('bread','butter'))
+
+print(" love bread {1} and butter {0}".format('bread','butter'))
+
+# Python Input
+# Up till now, our programs were static. The value of variables were defined or hard coded into the source code.
+
+# To allow flexibility we might want to take the input from the user. In Python, we have the input() function to allow this. The syntax for input() is
+print("welcome please register")
+name=input("please enter your name")
+phone_no=input("enter your phone no.")
+weight=input("please enter the weight")
+print("successfully registered")
+print("welcome {0} you have registered successfully".format(name))
+print("your phone no is {0} & your weight is {1}".format(phone_no,weight))
+
+# Python import
+# When our program grows bigger, it is a good idea to break it into different modules.
+
+# A module is a file containing Python definitions and statements. Python modules have a filename and end with the extension .py.
+
+# Definitions inside a module can be imported to another module or the interactive interpreter in Python. We use the import keyword to do this.
+
+# For example, we can import the math module by typing in import math.
+
+# import math
+# print(math.pi)
+# >>#output: 3.14
+
+# What are operators in python?
+# Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand.
+
+# Arithmetic operators
+# Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication etc
+x=15
+y=2
+
+print("x={0} y={1} x+y--> {2}".format(x,y,x+y))
+# +	Add two operands or unary plus
+
+print("x={0} y={1} x-y--> {2}".format(x,y,x-y))
+# - Subtract right operand from the left or unary minus
+
+print("x={0} y={1} x*y--> {2}".format(x,y,x*y))
+# * multiply two operand
+x=float(x)
+y=float(y)
+
+print("x={0} y={1} x/y--> {2}".format(x,y,x/y))
+# /	Divide left operand by the right one (always results into float)
+
+print("x={0} y={1} x%y--> {2}".format(x,y,x%y))
+# %	Modulus - remainder of the division of left operand by the right
+
+print("x={0} y={1} x//y--> {2}".format(x,y,x//y))
+# //	Floor division - division that results into whole number adjusted to the left in the number line
+
+print("x={0} y={1} x**y--> {2}".format(x,y,x**y))
+# **	Exponent - left operand raised to the power of right
+
+
+
+
+
+
