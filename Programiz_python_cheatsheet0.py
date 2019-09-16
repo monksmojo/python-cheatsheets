@@ -521,8 +521,32 @@ print("x={0} y={1} x//y--> {2}".format(x,y,x//y))
 print("x={0} y={1} x**y--> {2}".format(x,y,x**y))
 # **	Exponent - left operand raised to the power of right
 
+# Comparison operators
+
+# Comparison operators are used to compare values. It either returns True or False according to the condition.
 
 
 
+#  > 	Greater that - True if left operand is greater than the right 	x > y
+print("x={0} y={1} x>y --> {2}".format(x,y,x>y))
+# True
 
+#  < 	Less that - True if left operand is less than the right 	x < y
+print("x={0} y={1} x<y --> {2}".format(x,y,x<y))
+# False
 
+# == 	Equal to - True if both operands are equal 	x == y
+print("x={0} y={1} x==y --> {2} ".format(x,y,x==y))
+#False
+
+# != 	Not equal to - True if operands are not equal 	x != y
+print("x={0} y={1} x!=y -->{2}".format(x,y,x!=y))
+#True
+
+# >= 	Greater than or equal to - True if left operand is greater than or equal to the right 	x >= y
+print("x={0} y={1} x>=y--> {3}".format(x,y,x>=y))
+# False
+
+# <= 	Less than or equal to - True if left operand is less than or equal to the right 	x <= y
+print("x={0} y={1} x<=y---> {3}".format(x,y,x<=y))
+# False
