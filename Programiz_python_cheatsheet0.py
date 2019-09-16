@@ -544,9 +544,9 @@ print("x={0} y={1} x!=y -->{2}".format(x,y,x!=y))
 #True
 
 # >= 	Greater than or equal to - True if left operand is greater than or equal to the right 	x >= y
-print("x={0} y={1} x>=y--> {3}".format(x,y,x>=y))
-# False
+print("x={0} y={1} x>=y--> {2}".format(x,y,x>=y))
+# True
 
 # <= 	Less than or equal to - True if left operand is less than or equal to the right 	x <= y
-print("x={0} y={1} x<=y---> {3}".format(x,y,x<=y))
+print("x={0} y={1} x<=y---> {2}".format(x,y,x<=y))
 # False
