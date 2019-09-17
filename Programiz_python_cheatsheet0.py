@@ -550,3 +550,87 @@ print("x={0} y={1} x>=y--> {2}".format(x,y,x>=y))
 # <= 	Less than or equal to - True if left operand is less than or equal to the right 	x <= y
 print("x={0} y={1} x<=y---> {2}".format(x,y,x<=y))
 # False
+
+# Logical Operator
+x=True
+y=False
+
+# and---True if both the operands are true	x and y
+print("x-{0} & y-{1} is -{2}".format(x,y,x and y))
+# output: x and y is False
+
+# or---True if either of the operands is true	x or y
+print("x-{0} or y-{1} is -{2}".format(x,y,x or y)
+)
+# output: x or y is True
+ 
+# not---True if operand is False (complements the operand) not x
+print("x is {0} so not {1} is {2}".format(x,x,not x))
+
+# Bitwise Operator
+
+# Bitwise operators act on operands as if they were string of binary digits. It operates bit by bit, hence the name.
+
+# For example, 2 is 10 in binary and 7 is 111.
+
+# In the table below: Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
+x=10
+y=4
+
+print("x is {0} y is {1} x & y (in decimal) will be -->{2}".format(x,y,x & y))
+# &	Bitwise AND	x& y = 0 (0000 0000)
+
+print("x is {0} y is {1} x | y (in decimal) will be -->{2}".format(x,y,x | y))
+# |	Bitwise OR	x | y = 14 (0000 1110)
+
+print("x is {0} so ~ x will be {1}".format(x,~x))
+# ~	Bitwise NOT	~x = -11 (1111 0101)
+
+print("x is {0} and  y is {1} so x 'xor' y will be {2} ".format(x,y, x^y))
+# ^	Bitwise XOR	x ^ y = 14 (0000 1110)
+
+print("bitwise right shift of x -{0} to 2 bits  will be -{1}".format(x,x>>2))
+# >> Bitwise right shift (x = 10 (0000 1010 in binary))	x>> 2 = 2 (0000 0010)
+
+print("bitwise left shift operator of x-{0} to 2 bits will be -{1}".format(x,x<<2))
+# << Bitwise left shift (x = 10 (0000 1010 in binary))	x<< 2 = 40 (0010 1000)
+
+Special operators
+Python language offers some special type of operators like the identity operator or the membership operator. They are described below with examples.
+
+# Identity operators
+# is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory. Two variables that are equal does not imply that they are identical.
+
+# Identity operators in Python
+
+# Operator	Meaning	Example
+# is	True if the operands are identical (refer to the same object)	x is True
+
+# is not	True if the operands are not identical (do not refer to the same object)	x is not True
+#example
+x1= 5
+y1= 5
+x2= 'hello'
+y2= 'hello'
+x3= [1,2,3]
+y3= [1,2,3]
+
+print("IDENTITY OPERATOR IN PYTHON")
+print("x1 is {0} and y1 is {1} then 'x1 is y1' is ".format(x,y,x1 is y1))#True
+# Here, we see that x1 and y1 are integers of same values, so they are equal as well as identical because the integer 5 act as object. 
+
+print("x2 is {0} y2 is {1} then 'x1 is not y1' is".format(x,y,x2 is not y2))#false
+# Here, we see that x2 and y2 are string literals, so they are equal as well as identical because the string literal act as object. 
+
+print("x3 is {0} y3 is {1} then 'x3 is y3' is".format(x,y,x3 is y3))#false
+# But x3 and y3 are list. They are equal but not identical. It is because interpreter locates them separately in memory although they are equal.
+
+
+# Membership operators
+# in and not in are the membership operators in Python. They are used to test whether a value or variable is found in a sequence (string, list, tuple, set and dictionary).
+
+# In a dictionary we can only test for presence of key, not the value.
+
+# Operator	Meaning	Example
+# in	True if value/variable is found in the sequence	5 in x
+# not in	True if value/variable is not found in the sequence	5 not in x
