@@ -595,8 +595,8 @@ print("bitwise right shift of x -{0} to 2 bits  will be -{1}".format(x,x>>2))
 print("bitwise left shift operator of x-{0} to 2 bits will be -{1}".format(x,x<<2))
 # << Bitwise left shift (x = 10 (0000 1010 in binary))	x<< 2 = 40 (0010 1000)
 
-Special operators
-Python language offers some special type of operators like the identity operator or the membership operator. They are described below with examples.
+# Special operators
+# Python language offers some special type of operators like the identity operator or the membership operator. They are described below with examples.
 
 # Identity operators
 # is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory. Two variables that are equal does not imply that they are identical.
@@ -616,13 +616,13 @@ x3= [1,2,3]
 y3= [1,2,3]
 
 print("IDENTITY OPERATOR IN PYTHON")
-print("x1 is {0} and y1 is {1} then 'x1 is y1' is ".format(x,y,x1 is y1))#True
+print("x1 is {0} and y1 is {1} then 'x1 is y1' is {2}".format(x1,y1,x1 is y1))#True
 # Here, we see that x1 and y1 are integers of same values, so they are equal as well as identical because the integer 5 act as object. 
 
-print("x2 is {0} y2 is {1} then 'x1 is not y1' is".format(x,y,x2 is not y2))#false
+print("x2 is {0} y2 is {1} then 'x1 is not y1' is {2}".format(x2,y2,x2 is not y2))#false
 # Here, we see that x2 and y2 are string literals, so they are equal as well as identical because the string literal act as object. 
 
-print("x3 is {0} y3 is {1} then 'x3 is y3' is".format(x,y,x3 is y3))#false
+print("x3 is {0} y3 is {1} then 'x3 is y3' is {2}".format(x3,y3,x3 is y3))#false
 # But x3 and y3 are list. They are equal but not identical. It is because interpreter locates them separately in memory although they are equal.
 
 
@@ -632,5 +632,35 @@ print("x3 is {0} y3 is {1} then 'x3 is y3' is".format(x,y,x3 is y3))#false
 # In a dictionary we can only test for presence of key, not the value.
 
 # Operator	Meaning	Example
-# in	True if value/variable is found in the sequence	5 in x
-# not in	True if value/variable is not found in the sequence	5 not in x
+# in	True if value/variable is found in the sequence	
+
+# not in	True if value/variable is not found in the sequence
+
+x='hello world'
+print("x is {0} so is 'h in x' will be {1}".format(x,'h' in x))#True
+print("'HELLO' in x{0} will be {1}".format(x,'HELLO' in x))#False
+
+# Python Namespace and Scope
+
+# Name (also called identifier) is simply a name given to objects. Everything in Python is an object. Name is a way to access the underlying object.
+
+# For example, when we do the assignment a = 2, here 2 is an object stored in memory and a is the name we associate it with. We can get the address (in RAM) of some object through the built-in function, id(). Let's check it.
+
+a=2 #2 integer is the object
+print("id() of a =",a,"will be",id(a))#
+print("id() of 2 will be",id(2))
+print("a=a+1 =",a+1)
+print("now the id of a",a,"will be",id(a))
+print("id() of 3",id(3))
+b=2
+print("id of b",b,"will be",id(b))
+
+# Functions are objects too, so a name can refer to them as well.
+def printHello():
+    '''printHello function is an object in python'''
+    print("inside printHello function")
+print(printHello.__doc__)    
+printHello()
+print("id of printHello function will be",id(printHello))
+
+# namespace
