@@ -664,3 +664,72 @@ printHello()
 print("id of printHello function will be",id(printHello))
 
 # namespace
+# In Python, you can imagine a namespace as a mapping of every name, you have defined, to corresponding objects.
+
+# Different namespaces can co-exist at a given time but are completely isolated.
+
+# A namespace containing all the built-in names is created when we start the Python interpreter and exists as long we don't exit.
+
+# This is the reason that built-in functions like id(), print() etc. are always available to us from any part of the program. Each module creates its own global namespace.
+
+# These different namespaces are isolated. Hence, the same name that may exist in different modules do not collide.
+
+# Modules can have various functions and classes. A local namespace is created when a function is called, which has all the names defined in it. Similar, is the case with class. Following diagram may help to clarify this concept.
+
+# Nested Namespaces in Python Programming
+
+# Python Variable Scope
+# Although there are various unique namespaces defined, we may not be able to access all of them from every part of the program. The concept of scope comes into play.
+
+# Scope is the portion of the program from where a namespace can be accessed directly without any prefix.
+
+# At any given moment, there are at least three nested scopes.
+
+# 1. Scope of the current function which has local names
+# 2. Scope of the module which has global names
+# 3. Outermost scope which has built-in names
+# When a reference is made inside a function, the name is searched in the local namespace, then in the global namespace and finally in the built-in namespace.
+
+# If there is a function inside another function, a new scope is nested inside the local scope.
+
+
+def outer_function0():
+    '''calling of outer_function0()'''
+    b=90
+    print("value of b in outer_function0()",b)
+    def inner_function0():
+        '''calling of inner_function0()'''
+        b=60
+        print("value of b in inner_function0()",b)
+    print(inner_function0.__doc__)
+    inner_function0()
+b=30
+print(outer_function0.__doc__)
+outer_function0()
+print("inside built-in namespace")
+print("value of b inside built-in namespace",b)
+
+#the use of global keyword
+# global keyword helps you to refer to the variable declared in global/built-in namespace
+ 
+# Here, all reference and assignment are to the global a due to the use of keyword global.
+
+
+def outer_function1():
+    ''' calling of outer_function1() '''
+    global a
+    a=20
+    print("indside outer_function1() a=",a)
+
+    def inner_function1():
+        '''calling of inner_function1()'''
+        global a
+        a=40
+        print("inside inner_function1() a=",a)
+    print(inner_function1.__doc__)    
+    inner_function1()    
+a=80
+print(outer_function1.__doc__)
+outer_function1()
+print("inside built-in namespace")
+print("value of a inside built-in namespace",a)
