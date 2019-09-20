@@ -733,3 +733,62 @@ print(outer_function1.__doc__)
 outer_function1()
 print("inside built-in namespace")
 print("value of a inside built-in namespace",a)
+
+# Python if...else Statement
+
+# Decision making is required when you want to execute a certain condition is satisfied
+
+# if (condition):
+#     print("if above condition is true this block will be executed")
+# else:
+#     print("if condition is false else block will be executed")
+
+# Python interprets non-zero values as True. None and 0 are interpreted as False.
+
+num =3
+if num>0:
+    print("num is greater than 0")
+print("end of if block 1 this will be always be executed")
+
+if num <3:
+    print("num is less than zero")
+print("end of if block 2 this will always will be executed")    
+
+
+# you can declare an if block alone 
+# or a if block immidiately followed by else block 
+# or if block foloowed by multiple elif block and the else block
+
+num=int(input("enter a number :"))
+
+
+# while taking input the system by default take input in string format so make sure to type cast into required data type
+
+if (num > 0):
+    print("number is positive")
+elif (num < 0):
+    print("number is negative")
+else:
+    print("number is equal to 0")        
+
+# If all the conditions are False, body of else is executed.
+
+# Only one block among the several if...elif...else blocks is executed according to the condition.
+
+# The if block can have only one else block. But it can have multiple elif blocks.
+
+
+# Python Nested if statements
+
+# We can have a if...elif...else statement inside another if...elif...else statement. This is called nesting in computer programming.
+
+# Any number of these statements can be nested inside one another. Indentation is the only way to figure out the level of nesting. This can get confusing, so must be avoided if we can.
+
+num=float(input("enter a number:"))
+if(num >= 0):
+    if(num == 0):
+        print("number is zero")
+    else:
+        print("number is positive")
+else:
+    print("number is negative")
