@@ -792,3 +792,58 @@ if(num >= 0):
         print("number is positive")
 else:
     print("number is negative")
+
+#Python for loop
+
+# the for loop in python is use to traverse or iterate through list tuple strings
+# Syntax
+# for val in sequence:
+#     print(val)
+# Here, val is the variable that takes the value of the item inside the sequence on each iteration.
+
+# Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation
+
+#programs tofind the sum of all the numbers stored in the list
+
+#list of numbers
+numbers=[6,5,3,9,7,2,1]
+sum=0
+for number in numbers:
+    sum+=number
+print("sum of the number list-{0} is {1}".format(numbers,sum))
+
+# The range() function
+# We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
+
+# We can also define the start, stop and step size as range(start,stop,step size). step size defaults to 1 if not provided.
+
+# This function does not store all the values in memory, it would be inefficient. So it remembers the start, stop, step size and generates the next number on the go.
+
+# To force this function to output all the items, we can use the function list().
+
+# some range exapmle
+print(range(1,10))
+
+#converting the above range into list
+range_list=list(range(0,10))
+print(range_list)
+
+#(start,stop-1)
+print(list(range(5,16)))
+
+#(start,stop-1,step size)
+print(list(range(2,22,2)))  
+
+
+genres=['blues','rock','jazz','techno']
+# string list with for loop
+print("travesrsing string list")
+for genre in genres:
+    print("I love",genre)
+
+# We can use the range() function in for loops to iterate through a sequence of numbers. It can be combined with the len() function to iterate though a sequence using indexing. Here is an example.
+
+#programs to iterate through a list using indexing
+
+for i in range(len(genres)):
+    print("I like",genres[i])
