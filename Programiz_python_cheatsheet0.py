@@ -808,7 +808,8 @@ else:
 #list of numbers
 numbers=[6,5,3,9,7,2,1]
 sum=0
-for number in numbers:
+print("sum of the list {0} using the for loop".format(numbers))
+for number in numbers: 
     sum+=number
 print("sum of the number list-{0} is {1}".format(numbers,sum))
 
@@ -847,3 +848,83 @@ for genre in genres:
 
 for i in range(len(genres)):
     print("I like",genres[i])
+
+# for loop with else
+
+# A for loop can have an optional else block as well. The else part is executed if the items in the sequence used in for loop exhausts.
+
+# break statement can be used to stop a for loop. In such case, the else part is ignored.
+
+# Hence, a for loop's else part runs if no break occurs.
+
+# Here is an example to illustrate this.
+
+digits =[0,1,2,3]
+for digit in digits:
+    print(digit)
+else:
+    print("no item left")
+
+
+
+# What is while loop in Python?
+
+# The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+
+# We generally use this loop when we don't know beforehand, the number of times to iterate.
+# Syntax of while Loop in Python
+
+# while test_expression:
+#     Body of while
+
+# In while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False.
+
+# In Python, the body of the while loop is determined through indentation.
+
+# Body starts with indentation and the first unindented line marks the end.
+
+# Python interprets any non-zero value as True. None and 0 are interpreted as False.
+
+#example of while loop
+# the numbers list we have delared earlier is
+# numbers=-{6,5,3,9,7,2,1}
+
+print("the sum of the list {0} using while loop".format(numbers))
+sum=0
+i=0
+while i < len(numbers):
+    sum+=numbers[i]
+    i+=1
+
+print("the sum of the numbers-list {0} is {1}".format(numbers,sum))
+
+print("the sum of natural no. using while loop in python")
+number_limit=int(input("enter the number till you want its sum"))
+i=1
+sum=0
+while i <= number_limit:
+    sum += i
+    i+=1
+
+print("the sum of natural number till {0} is = {1}".format(number_limit,sum))
+
+# while loop with else
+
+# Same as that of for loop, we can have an optional else block with while loop as well.
+
+# The else part is executed if the condition in the while loop evaluates to False.
+
+# The while loop can be terminated with a break statement. In such case, the else part is ignored. Hence, a while loop's else part runs if no break occurs and the condition is false.
+
+# Here is an example to illustrate this.
+
+# example to illustrate the use of else statement with the while loop
+
+i=0
+
+while i < 3:
+    print("inside the while loop")
+    i+=1
+else:
+    print("inside else")
+    
