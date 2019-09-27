@@ -41,7 +41,7 @@ print("hello world!")
 # we cannot use keywords as a variable name function name or as a identifier.
 # they are used to define syntax and structure of python language and hold a specific meaning keyword in python are case sensitive.
 
-# there are aprox 33 keyword in the python language
+# there are approx 33 keyword in the python language
 
 # all the keywords except True, False & None are in lowercase.
 # example of keywords in python
@@ -54,7 +54,7 @@ print("hello world!")
 # python identifier
 
 # an identifier is a name given to entities like class function variables etc.
-# it helpus to diffrentiate diffrent entities
+# it helpus to differentiate diffrent entities
 
 # Rules for writing identifiers
 
@@ -66,7 +66,7 @@ print("hello world!")
 # 3.An identifier cannot start with a digit. 1variable is invalid, but variable1 is perfectly fine.
 
 # 4. Keywords cannot be used as identifiers.
-# forex-
+# for ex-
 # global=1; //this will give invalid syntax error
 
 # 5.We cannot use special symbols like !, @, #, $, % etc. in our identifier. for ex-h@llo=10// invalid syntax error.
@@ -107,7 +107,7 @@ c = 3
 # Python Indentation
 # Most of the programming languages like C, C++, Java use braces { } to define a block of code. Python uses indentation.
 
-# A code block (body of a function, loop etc.) starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block.
+# A code block (body of a function, loop etc.) starts with indentation and ends with the first un indented line. The amount of indentation is up to you, but it must be consistent throughout that block.
 
 # Generally four whitespaces are used for indentation and is preferred over tabs. Here is an example.
 
@@ -145,11 +145,11 @@ number = 0.1
 print(number)
 
 # Initially, the value of number was 10. Later it's changed to 1.1.
-# we can assign value to the operator using assigment operator
+# we can assign value to the operator using assignment operator
 
 # Note: In Python, we don't assign values to the variables, whereas Python gives the reference of the object (value) to the variable.
 
-# changing the value of the variable using assigment operator
+# changing the value of the variable using assignment operator
 website = "apple.com"
 print(website)
 website = "google.com"
@@ -176,7 +176,7 @@ print("a= ", a, "b= ", b, "c= ", c, "are all same")
 
 # for ex-:
 # create a file constant.py
-# declare consyants in it
+# declare constants in it
 # like
 PI = 3.14
 GRAVITY = 9.8
@@ -197,10 +197,10 @@ b = 100  # decimalliteral
 c = 0o310  # octal literal
 d = 0x12c  # hexadecimal literal
 
-print("a value hold binary literal conveted to decimal", a)
+print("a value hold binary literal converted to decimal", a)
 print("b value hold decimal literal", b)
-print("c value hold octal literal conveted to decimal", c)
-print("d value hold hexadecimal literal conveted to decimal", d)
+print("c value hold octal literal converted to decimal", c)
+print("d value hold hexadecimal literal converted to decimal", d)
 
 # float literal
 float_1 = 10.5
@@ -225,7 +225,7 @@ print("the character literal is", character_literal)
 multiline_string = '''hello today i am gonna show you->
 the multiline string->
 present in python'''
-print("multiline strig in python")
+print("multiline string in python")
 print(multiline_string)
 
 # We can use the slicing operator [ ] to extract an item or a range of items from a string. Index starts form 0 in Python
@@ -269,7 +269,7 @@ print("use of none literal")
 menu(drink)
 menu(food)
 
-# Literral Collectuons
+# Literal Collections
 # there are four different literals collection like list,set,tuple,dictionary..
 
 # Data Types in python
@@ -277,7 +277,7 @@ menu(food)
 
 # There are various data types in Python. Some of the important types are listed below.
 
-# 0. pytyhon number
+# 0. python number
 # Integers, floating point numbers and complex numbers falls under Python numbers category. They are defined as int, float and complex class in Python.
 
 # We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
@@ -302,12 +302,12 @@ print("python list1-", list1)
 
 print("list literal- ", fruit)
 # We can use the slicing operator [ ] to extract an item or a range of items from a list. Index starts form 0 in Python
-print("slicing exapmle on fruit & list1")
+print("slicing example on fruit & list1")
 print("list1[0]-", list1[0])  # 1 index start from 0
 print("list1[0:3]-", fruit[0:3])  # apple orange banana
 print("list1[1:2]-", fruit[1:2])  # start from index 1 to (2-1)
 print("list1[1:]-", fruit[1:])  # orange banana
-print("list1[:3]", fruit[:3])  # apple orrange banana
+print("list1[:3]", fruit[:3])  # apple orange banana
 
 # python list are mutable
 fruit[2] = "mangos"
@@ -323,7 +323,7 @@ number = (10, 20, 30, 30)
 print("tuple literal-", number)
 
 # all the elements of the tuple can be of diffrent types
-tuple1 = (1.0, 6, "HelloTupple")
+tuple1 = (1.0, 6, "HelloTuple")
 # We can use the slicing operator [] to extract items but we cannot change its value.
 print("tuple1[2]-", tuple1[2])
 print("tuple1[0:3]-", tuple1[0:3])
@@ -364,7 +364,7 @@ print("converting string-"+'"cool mamba"'+"to list", list("cool mamba"))
 print("converting list", [10, 11.56, "hello"],
       "to tuple", tuple([10, 11.56, "hello"]))
 
-# we can alos convert list to set, tuple to set & # and vice versa
+# we can also convert list to set, tuple to set & # and vice versa
 
 # list to dict
 print("converting list", [[1, 2], [3, 4]], "to dict", dict([[1, 2], [3, 4]]))
@@ -383,7 +383,7 @@ print("converting list", [[1, 2], [3, 4]], "to dict", dict([[1, 2], [3, 4]]))
 
 num_int = 30
 num_float = 10.87
-print("inplicit type conversion")
+print("implicit type conversion")
 print(num_int, type(num_int))
 print(num_float, type(num_float))
 print(num_int+num_float, type(num_int+num_float))
@@ -413,7 +413,7 @@ print("adding them using explicit type casting will solve the problem")
 # declared above
 # num_int=123
 # num_str="456"
-# adding them with the help of explicity type conversion
+# adding them with the help of explicit type conversion
 num_string = int(num_string)
 print("num_string coverted to int using explicit type casting")
 print(num_string+num_int)
@@ -428,8 +428,8 @@ print(type(num_int+num_string))
 
 # We can also output data to a file, but this will be discussed later. An example use is given below.
 
-print("the sentence will be ouputed to the screeen")
-# Output: this sentence will be outputed to the screen
+print("the sentence will be output to the screen")
+# Output: this sentence will be output to the screen
 a=5
 print("the value of a is",a)#5
 
@@ -452,7 +452,7 @@ print(1,2,3,4,sep="*")
 # output: 1*2*3*4
 
 print(1,2,3,4,sep="$",end="&")
-#ouput: 1$2$3$4$5&
+#output: 1$2$3$4$5&
 
 # Output formatting
 # Sometimes we would like to format our output to make it look attractive. This can be done by using the str.format() method. This method is visible to any string object.
@@ -756,8 +756,8 @@ print("end of if block 2 this will always will be executed")
 
 
 # you can declare an if block alone 
-# or a if block immidiately followed by else block 
-# or if block foloowed by multiple elif block and the else block
+# or a if block immediately followed by else block 
+# or if block followed by multiple elif block and the else block
 
 num=int(input("enter a number :"))
 
@@ -803,7 +803,7 @@ else:
 
 # Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation
 
-#programs tofind the sum of all the numbers stored in the list
+#programs to find the sum of all the numbers stored in the list
 
 #list of numbers
 numbers=[6,5,3,9,7,2,1]
@@ -822,7 +822,7 @@ print("sum of the number list-{0} is {1}".format(numbers,sum))
 
 # To force this function to output all the items, we can use the function list().
 
-# some range exapmle
+# some range example
 print(range(1,10))
 
 #converting the above range into list
@@ -838,7 +838,7 @@ print(list(range(2,22,2)))
 
 genres=['blues','rock','jazz','techno']
 # string list with for loop
-print("travesrsing string list")
+print("traversing string list")
 for genre in genres:
     print("I love",genre)
 
@@ -881,12 +881,12 @@ else:
 
 # In Python, the body of the while loop is determined through indentation.
 
-# Body starts with indentation and the first unindented line marks the end.
+# Body starts with indentation and the first un indented line marks the end.
 
 # Python interprets any non-zero value as True. None and 0 are interpreted as False.
 
 #example of while loop
-# the numbers list we have delared earlier is
+# the numbers list we have declared earlier is
 # numbers=-{6,5,3,9,7,2,1}
 
 print("the sum of the list {0} using while loop".format(numbers))
@@ -927,4 +927,25 @@ while i < 3:
     i+=1
 else:
     print("inside else")
-    
+
+#break statements in python
+#break and continue are used to break the normal flow of the loop
+# In Python, break and continue statements can alter the flow of a normal loop.
+
+# Loops iterate over a block of code until test expression is false, but sometimes we wish to terminate the current iteration or even the whole loop without checking test expression.
+
+# Python break statement
+
+# The break statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
+
+# If break statement is inside a nested loop (loop inside another loop), break will terminate the innermost loop.
+
+words=list("hello boys")
+print("the list of words is {}".format(words))
+for word in words:
+    if(word == "y"):
+        print("break encountered")
+        break
+    else:
+        print(word)
+print("end of for loop")
