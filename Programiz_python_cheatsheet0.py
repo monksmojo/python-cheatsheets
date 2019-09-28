@@ -994,9 +994,10 @@ print("print word with stars in it for example w*o*r*d")
 word=input("enter a word or skip by pressing enter")
 i=0
 while i<len(word):
-    print(word[i],sep="*")
+    print(word[i],end="*")
+    i=i+1
 else:
-    print("word printed") 
+    print("\n word printed") 
 
 print("done of condition at the start")
 
@@ -1004,16 +1005,16 @@ print("done of condition at the start")
 print("program to depict all the vowels")
 i=0
 vowels=list("aeiouAEIOU")
+print(vowels)
 while True:
     if (i<5):
         v=input("enter the vowels")
         if v in vowels:
             print("yes {0} is vowel".format(v))
-
+            i=i+1
         else:
             print("you have entered a wrong vowel")
             break
-        i=i+7
     else:
         print("you have answered all the vowels")
         break
