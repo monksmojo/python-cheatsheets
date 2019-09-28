@@ -940,6 +940,7 @@ else:
 
 # If break statement is inside a nested loop (loop inside another loop), break will terminate the innermost loop.
 
+print("working of the break statement")
 words=list("hello boys")
 print("the list of words is {}".format(words))
 for word in words:
@@ -947,5 +948,86 @@ for word in words:
         print("break encountered")
         break
     else:
-        print(word)
+        print(word,end=" ")
 print("end of for loop")
+
+#python continue statement
+
+# The continue statement is used to skip the rest of the code   inside the loop for the current iteration only. loop does not terminate but continue on with thw next iteration.
+
+print("working of the continue statement")
+words=list("kool cucumber")
+for word in words:
+    if(word == "u"):
+        continue
+        print("continue encountered")
+
+    print(word,end=" ")
+
+print("end of for loop")
+
+# What is pass statement in Python?
+# In Python programming, pass is a null statement. The difference between a comment and pass statement in Python is that, while the interpreter ignores a comment entirely, pass is not ignored.
+
+# However, nothing happens when pass is executed. It results into no operation (NOP).
+
+# We generally use it as a placeholder.
+
+# Suppose we have a loop or a function that is not implemented yet, but we want to implement it in the future. They cannot have an empty body. The interpreter would complain. So, we use the pass statement to construct a body that does nothing.
+words=list("call 911")
+for words in words:
+    pass
+else:
+    print("the loop is passed")
+
+# some example of loops in python
+
+# infinite loop using while loop
+# num=0
+# while True:
+#     num=num+1
+#     print(num,end=" ")
+
+#loop with condition in the start
+
+print("print word with stars in it for example w*o*r*d")
+word=input("enter a word or skip by pressing enter")
+i=0
+while i<len(word):
+    print(word[i],sep="*")
+else:
+    print("word printed") 
+
+print("done of condition at the start")
+
+#loop with condition in the middle
+print("program to depict all the vowels")
+i=0
+vowels=list("aeiouAEIOU")
+while True:
+    if (i<5):
+        v=input("enter the vowels")
+        if v in vowels:
+            print("yes {0} is vowel".format(v))
+
+        else:
+            print("you have entered a wrong vowel")
+            break
+        i=i+7
+    else:
+        print("you have answered all the vowels")
+        break
+
+print("game has ended")
+
+#loop with condition at the end
+print("lets roll a dice")
+import random
+while True:
+    input("press enter to roll the dice")
+    num=random.randint(1,6)
+    print("dice shows",num)
+    option = input("Roll The Dice Again(y/n):- ")
+    if(option=="n" or option =="N"):
+        break
+print("end of game")
