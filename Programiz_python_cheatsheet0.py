@@ -174,7 +174,7 @@ print("a= ", a, "b= ", b, "c= ", c, "are all same")
 
 # in python the CONSTANTS are declared in seprate module and the we import module to the main file
 
-# for ex-:
+# for ex-:9
 # create a file constant.py
 # declare constants in it
 # like
@@ -269,8 +269,6 @@ print("use of none literal")
 menu(drink)
 menu(food)
 
-# Literal Collections
-# there are four different literals collection like list,set,tuple,dictionary..
 
 # Data Types in python
 # Every value in python has a datatype Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
@@ -291,6 +289,10 @@ print(a, "is a type of", type(a))
 
 a = 1+2j  # complex
 print(a, "is it complex number ? \n ans:", isinstance(a, complex))
+
+# Literal Collections
+# there are four different literals collection like list,set,tuple,dictionary..
+
 
 # 1. python list
 # list is an orered sequence of item(WE CAN PERFORM SLICING OPERATION ON LIST BECAUSE THEY ARE ORDERED). it is one of the most used data type in the python and is very flexible.
@@ -517,7 +519,6 @@ print("x={0} y={1} x%y--> {2}".format(x,y,x%y))
 
 print("x={0} y={1} x//y--> {2}".format(x,y,x//y))
 # //	Floor division - division that results into whole number adjusted to the left in the number line
-
 print("x={0} y={1} x**y--> {2}".format(x,y,x**y))
 # **	Exponent - left operand raised to the power of right
 
