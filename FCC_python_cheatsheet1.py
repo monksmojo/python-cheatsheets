@@ -1,3 +1,11 @@
+# THIS IS FREE CODE CAMP Learn Python - Full Course for Beginners [Tutorial] PYTHON CHEATSHEET CREATED BY FOLLOWING THEIR VIDEO TUTORIAL ON YouTube.
+# CHEATSHEET AUTHOR - MONKS_MOJO
+# DATE-12TH august 2019
+# VIDEO TITLE-Learn Python - Full Course for Beginners [Tutorial]
+# VIDEO LINK-https://youtu.be/rfscVS0vtbw
+#  BIG THANKS TO FREE CODE CAMP AND MIKE DANE FROM GIRAFFE ACADEMY FOR BECOMING MY TEACHER FOR THIS COURSE
+
+
 print("hello world")
 # first python programme to print hello world
 # printing some slashes and symbol

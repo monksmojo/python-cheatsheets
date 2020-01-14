@@ -1,4 +1,7 @@
 # PROGRAMIZ PYTHON TUTORIAL CHEATSHEET
+#author-monks_mojo
+#date-20th september 2019
+
 
 # Python Comments
 # Comments are very important while writing a program. It describes what's going on inside a program so that a person looking at the source code does not have a hard time figuring it out. You might forget the key details of the program you just wrote in a month's time. So taking time to explain these concepts in form of comments is always fruitful.
@@ -342,9 +345,9 @@ print("dictionary literal", alphabets)
 print("type of alphabets-", type(alphabets))
 print("alphabets['a']-", alphabets["a"])
 print("alphabets['b']-", alphabets["b"])
+
 # 4. python set
 # Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered.
-
 # We can perform set operations like union, intersection on two sets. Set have unique values. They eliminate duplicates.
 vowels = {"a", "e", "i", "o", "u"}
 set1 = {5, 2, 3, 3, 4, 6}
