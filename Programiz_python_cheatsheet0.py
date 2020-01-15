@@ -963,8 +963,9 @@ print("working of the continue statement")
 words=list("kool cucumber")
 for word in words:
     if(word == "u"):
-        continue
         print("continue encountered")
+        continue
+
 
     print(word,end=" ")
 
