@@ -420,4 +420,37 @@ print("intersection on {0} and {1} is-> {2}".format(integer_set,whole_set,(integ
 print("distinct or diffrent element in {0} from {1} is-> {2}".format(integer_set,whole_set,(integer_set - whole_set)))
 ###################################################################
 
-###########################################################################
+######################### END OF DATATYPES ########################
+
+########################Flowcontrol#################################
+# 1.--> if elif else condition statement
+marks=int(input("eneter the marks"))#by default the input if string
+if(marks>80):
+    print("grade A")
+elif(marks<80 and marks >=60):
+    print("grade B")
+elif(marks<60 and marks >=40):
+    print("grade C")
+else:
+    print("grade F")
+
+# looping
+# while - when we have a condition and don't know the number of iteration we want to run the loop
+#entry controlled loops
+
+print("find the sum on n natural number")
+num=int(input("enter the number till you want sum"))
+if(num<=0):
+    print("eneter a positive number")
+else:
+    sum=0
+    while(num>=0):
+        sum+=num
+        num-=1
+print("the sum of number is {1}".format(sum))
+
+#for- when we know the number of iteration we need to run the loop are known
+
+# range starts from 10 end at 0 and keep decrementing by 1
+for quantity in range(10,0,-1):
+    print("{0} bottle of beer left".format(quantity))
