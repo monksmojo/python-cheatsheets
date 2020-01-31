@@ -351,49 +351,49 @@ print(my_list.insert(4, "holy"))
 
 ####################### Dictionaries in python #######################
 
-#dictionaries are the most flexible built in data type of python
-#dictionaries items are stored and fetch by key instead of by positional index
-#dictionaries are the key value pair 
-my_dict={1:"hey",2:"hi",3:"hello"}
+# dictionaries are the most flexible built in data type of python
+# dictionaries items are stored and fetch by key instead of by positional index
+# dictionaries are the key value pair
+my_dict = {1: "hey", 2: "hi", 3: "hello"}
 print(my_dict)
 # diffrent ways to create a dictionary
 
-#1.- empty dictionary
-empty_dict={}
+# 1.- empty dictionary
+empty_dict = {}
 
-#2.- dictionary with integer keys
-integer_key_dict={1:"yellow",2:10.7,3:4567}
+# 2.- dictionary with integer keys
+integer_key_dict = {1: "yellow", 2: 10.7, 3: 4567}
 
-#3.- dictionary with mixed keys
-mixed_key_dict={1:"yellow","hello":101,'C':"curly"}
+# 3.- dictionary with mixed keys
+mixed_key_dict = {1: "yellow", "hello": 101, 'C': "curly"}
 
-#dictionary methods
+# dictionary methods
 
-#accessing the dictionary method
+# accessing the dictionary method
 print(my_dict)
-print(my_dict[2])#where 2 is the key
+print(my_dict[2])  # where 2 is the key
 
-#length of the dictionary
-print("length of the my_dict is-->",len(my_dict))
+# length of the dictionary
+print("length of the my_dict is-->", len(my_dict))
 
-#key() printing all the keys of the dictionaries
-print("printing all the key of my_dict--> ",my_dict.keys())
+# key() printing all the keys of the dictionaries
+print("printing all the key of my_dict--> ", my_dict.keys())
 
-#values() printing all the values of the dictionaries
-print("printing all the values of my_dict--> ",my_dict.values())
+# values() printing all the values of the dictionaries
+print("printing all the values of my_dict--> ", my_dict.values())
 
-#items() printing all the key value pairs of the dictionaries
-print("all the key value pair of the my_dict--> ",my_dict.items())
+# items() printing all the key value pairs of the dictionaries
+print("all the key value pair of the my_dict--> ", my_dict.items())
 
-#get(key) returns the value for the specified key
-print("value present at key 1 in my dict is -->",my_dict.get(1))
+# get(key) returns the value for the specified key
+print("value present at key 1 in my dict is -->", my_dict.get(1))
 
-#update({key:value}) add a key value pair to the already existing key
+# update({key:value}) add a key value pair to the already existing key
 print("adding a key value to my_dict")
-my_dict.update({4:"namaste"})
+my_dict.update({4: "namaste"})
 print(my_dict)
 
-#pop(key) removes the specified key value from the dictionary.
+# pop(key) removes the specified key value from the dictionary.
 my_dict.pop(4)
 print("poping out last element from the my_dict")
 print(my_dict.items())
@@ -401,56 +401,237 @@ print(my_dict.items())
 #######################################################################
 
 #################### SETS IN PYTHON ###############################
-#a set is an unordered collection of the items
+# a set is an unordered collection of the items
 # a set cannot have duplicate values. which means every element should be unique
-my_set={"god","almighty","the one"}
-whole_set={1,2,4,5,6,9}
-integer_set={-1,-9,0,1,2,3}
+my_set = {"god", "almighty", "the one"}
+whole_set = {1, 2, 4, 5, 6, 9}
+integer_set = {-1, -9, 0, 1, 2, 3}
 print(my_set)
 
-#sets methods
+# sets methods
 
 # 1.union-does union(concatenate two sets) on two sets
-print("union on {0} and {1} is-> {2}".format(integer_set,whole_set,(integer_set | whole_set)))
+print("union on {0} and {1} is-> {2}".format(integer_set,
+                                             whole_set, (integer_set | whole_set)))
 
 # 2.intersection-display only the common element from two sets
-print("intersection on {0} and {1} is-> {2}".format(integer_set,whole_set,(integer_set & whole_set)))
+print("intersection on {0} and {1} is-> {2}".format(integer_set,
+                                                    whole_set, (integer_set & whole_set)))
 
 # 3.difference-display the distinct element from the left set
-print("distinct or diffrent element in {0} from {1} is-> {2}".format(integer_set,whole_set,(integer_set - whole_set)))
+print("distinct or diffrent element in {0} from {1} is-> {2}".format(
+    integer_set, whole_set, (integer_set - whole_set)))
 ###################################################################
 
 ######################### END OF DATATYPES ########################
 
 ########################Flowcontrol#################################
 # 1.--> if elif else condition statement
-marks=int(input("eneter the marks"))#by default the input if string
-if(marks>80):
+marks = int(input("eneter the marks"))  # by default the input if string
+if(marks > 80):
     print("grade A")
-elif(marks<80 and marks >=60):
+elif(marks < 80 and marks >= 60):
     print("grade B")
-elif(marks<60 and marks >=40):
+elif(marks < 60 and marks >= 40):
     print("grade C")
 else:
     print("grade F")
 
 # looping
 # while - when we have a condition and don't know the number of iteration we want to run the loop
-#entry controlled loops
+# entry controlled loops
 
 print("find the sum on n natural number")
-num=int(input("enter the number till you want sum"))
-if(num<=0):
+num = int(input("enter the number till you want sum"))
+if(num <= 0):
     print("eneter a positive number")
 else:
-    sum=0
-    while(num>=0):
-        sum+=num
-        num-=1
-print("the sum of number is {1}".format(sum))
+    sum = 0
+    while(num >= 0):
+        sum += num
+        num -= 1
+print("the sum of number is {0}".format(sum))
 
-#for- when we know the number of iteration we need to run the loop are known
+# for- when we know the number of iteration we need to run the loop are known
 
 # range starts from 10 end at 0 and keep decrementing by 1
-for quantity in range(10,0,-1):
+for quantity in range(10, 0, -1):
     print("{0} bottle of beer left".format(quantity))
+
+
+#### break and continue statement function ###
+# Break is used to come out of the loop when certain conditions are met
+print("to come out of the loop when counter hits ten")
+counter = 0
+while True:
+    if counter > 10:
+        break
+    else:
+        print("the current counter is on-->", counter)
+
+print("the loop has been ended")
+
+# Continue-> it ensures when certain conditions are met the following statements are skipped inside the loop and the loop will move on to the next iteration.
+print("odd number between 1 and 20")
+print("printing of odd number with the help of continue statement")
+for index in range(20):
+    if(index % 2 == 0):
+        continue
+    else:
+        print("{0} is odd".format(0))
+print("the loop has ended")
+##############################################
+
+######### FUNCTIONS IN PYTHON ################
+# Functions are of two types
+
+# 1.inbuilt functions- example len(),type(),name.upper()
+
+# 2.user defined function - it is the a block of organized reusable set of instructions and statements that is used to perform some relatable actions.
+
+# advantages of the functions
+# re-usability of the code
+# procedural decomposition make code more organized
+
+print("a function for addition of two numbers")
+
+
+def addition(num1, num2):
+    return num1+num2
+
+
+num1 = float(input("enter 1st number"))
+num2 = float(input("enter second number"))
+result = addition(num1, num2)
+print("{0} + {1} is = {2} ".format(num1, num2, result))
+
+# python uses and supports call by value methodology where is always an object reference
+
+original_list = ["telly", "mark", "alex"]
+print("original list is-->", original_list)
+# making a function which updates the original list
+
+
+def list_updater(argument_list):
+    argument_list = ["naruto", "sasuke", "obito"]
+    print("the list is updated")
+    return argument_list
+
+
+print("passing original_list to the list_updater() function")
+print("updated list-->")
+print(list_updater(original_list))  # ["naruto","sasuke","obito"]
+
+print("but did the original list actually changed or the function take the copy of the original list and worked on it")
+
+print("original_list after passing it to the function")
+print(original_list)
+##############################################
+############ FIBONACCI SERIES ################
+
+
+def print_fib(fib_range):
+    a = 0
+    b = 1
+    print(a)
+    print(b)
+    while (fib_range):
+        c = a+b
+        print("{0}+{1}->{2}".format(a, b, c))
+        a = b
+        b = c
+        fib_range -= 1
+
+
+print_fib(20)
+##############################################
+
+
+############### File Handling In Python ##################
+
+############## Reading From File ########################
+
+file_pointer = open("file_handling.txt", "r")
+# open function allows to open a connection between file and script
+# all the data from the file will be store inside file_pointer defined above
+# it takes  two arguments file path and write mode
+# diffrent modes we have in python file handling are
+# 1.> r (read)
+# 2.> w (write)
+# 3.> a (append)
+# 4.> r+ (read & write)
+
+# to make sure the file is in redable format with file_name.redable() function that returns True if the file is in readable format. else False
+
+if(file_pointer.readable()):
+    print("we can read from the file")
+    print(file_pointer.read())
+else:
+    print("unable to read file")
+
+# when you want to read a file line by line or want to read a specific line.we use a readline() function
+# we have another function readlines() which convert each line into the list.
+if(file_pointer.readable()):
+    print("we can read from the file")
+    print("reading first line")
+    file_pointer.seek(0)  # put the pointer to the first line
+    print(file_pointer.readline()[0:-1])  # traversing of only the first line
+else:
+    print("unable to read file")
+
+if(file_pointer.readable()):
+    print("we can read from the file")
+    line_list = file_pointer.readlines()  # saving the list
+    print("each line in the file is now element of the list")
+    print("reading first line")
+    print(line_list[0])
+
+    print("reading last line")
+    print(line_list[-1])
+else:
+    print("unable to read file")
+file_pointer.close()  # it is really important that you close a file
+# a lock mechanism is given to the file so if you don't close the file it wont be able to be open by another applications
+
+####################### writing to a file ##############
+# to write to the previously existed file we use appned mode (a).
+# to write to a newly created file we use write mode which create a file
+# append mode
+file_pointer = open("file_handling.txt", "a")
+print("appending to the file")
+print("enter your new friend name")
+friend_name = "\ntony stark\nbruce wayne\n"
+file_pointer.write(friend_name)
+file_pointer.close()
+print("checking if the data is written to the file")
+
+# after appending checking wether the data is written to the file of not
+file_pointer = open("file_handling.txt", "r")
+file_pointer.seek(0)  # putting the file pointer to start
+if(file_pointer.readable()):
+    print("we can read from the file")
+    print(file_pointer.read())
+else:
+    print("unable to read file")
+
+file_pointer.close()
+
+# write mode
+print("opening a file to the write mode")
+file_pointer = open("file_handling.txt", "w")
+print("writing to the file")
+print("overwriting the file")
+file_pointer.write("\nJim Morrison\nJohn Lennon \n Pepper Stone\nKurt Cobain")
+print("data written to the file")
+
+# after appending checking wether the data is written to the file of not
+file_pointer = open("file_handling.txt", "r")
+file_pointer.seek(0)  # putting the file pointer to start
+if(file_pointer.readable()):
+    print("we can read from the file")
+    print(file_pointer.read())
+else:
+    print("unable to read file")
+
+file_pointer.close()
+################################################################################
